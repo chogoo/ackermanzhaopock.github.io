@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" /> 
+  <title>Chogoo</title> 
+  <script type="text/javascript" src="https://gpad.lexue100.com/js/geo_loader-0.4.0.js"></script> 
+  <style>
+body{
+ font-weight: lighter;  
+background: url('https://zhaobotzhenghuo12634.gitee.io/picture/zzh.jpg');
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size: 100%;
+}
+
+  #gpad_container {
+   	 
+   	 overflow: hidden;
+   	background: none;
+	width: 80%;
+	height: 350px;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+  }
+ h1{text-align: center;
+	color:white;
+	font-weight: lighter;}
+</style>
+ </head>  
+ <body>
+  <div id="gpad_container" style="width:80%; height:70%;">
+   <h1>Chogoo-几何画板</h1>
+  </div> 
+  <script type="text/javascript">
+var _gpad = null;
+$(function create_gpad() {
+  var opt = {
+    toolbox: {
+      point: true,
+      expand_lines: true,
+      seg: true, ray: true, line: true,
+      circle: true,
+      poly: true,         
+      mark: true,        
+            
+    },
+    menu: {
+      show_fast_label: true,
+      fast_label_items_ex: 'A,B,C,D,E,F'
+    }
+  };
+  _gpad = GPad.create_pad(document.getElementById('gpad_container'), opt);
+});
+
+</script>   
+ </body>
+</html>
